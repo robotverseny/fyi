@@ -17,6 +17,7 @@ Tudnivalók / For your information
 |🟡 | `V`- `V` |
 |🔴 | `V`- `V` |
 
+![battery](etc/wheetec_battery01.png)
 
 ## Robot név és szín / Robot name and color
 
