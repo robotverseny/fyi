@@ -1,6 +1,23 @@
 # fyi
 Tudnivalók / For your information 
 
+## Alapbeállítások / Default settings
+
+|property <br /> tulajdonság | default <br/> alapértelmezett |
+|---|---|
+|`user@hostname` | `wheeltec@roboworks` <br />`wheeltec@192.168.0.100` |
+|SSID | `WHEELTEC_CAR_5.5_#` |
+|Jelszó | `dongguan` |
+
+## Akkumulátor / Battery
+
+|status | volt |
+|---|---|
+|🟢 | `V`- `V` |
+|🟡 | `V`- `V` |
+|🔴 | `V`- `V` |
+
+
 ## Robot név és szín / Robot name and color
 
 |`#` | color <br/> szín | english <br/> angol | hungarian <br/> magyar | robot name <br/> robot név |
