@@ -13,9 +13,9 @@ Tudnivalók / For your information
 
 |status | volt |
 |---|---|
-|🟢 | `V`- `V` |
-|🟡 | `V`- `V` |
-|🔴 | `V`- `V` |
+|🟢 | 21.0 `V`- 25.0`V` |
+|🟡 | 20.0`V`- 21.0`V` |
+|🔴 | > 20.0 `V` |
 
 ![battery](etc/wheetec_battery01.png)
 
