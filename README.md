@@ -6,8 +6,8 @@ Tudnivalók / For your information
 |property <br /> tulajdonság | default <br/> alapértelmezett |
 |---|---|
 |`user@hostname` | `wheeltec@roboworks` <br />`wheeltec@192.168.0.100` |
-|SSID | `WHEELTEC_CAR_5.5_#` |
-|Jelszó | `dongguan` |
+|SSID | `wheeltec_robo_#` |
+|Password <br /> Jelszó | `dongguan` |
 
 ## Akkumulátor / Battery
 
@@ -38,10 +38,41 @@ Tudnivalók / For your information
 |`13.` |<img src="etc/md_brown_100.svg"> | beige | bézs | `robo_x` |
 
 
+## `nmtui` / WiFi hotspot 
+
+Network Manager Text User Interface
+
+```yaml
+Profile name: hotspot1
+Device: wlan0
+SSID: wheeltec_robo_#
+Mode: Access Point
+Security: WPA & WPA2 Personal
+Password: dongguan
+IPv4 address: 192.168.0.100/24
+IPv4 gateway: 192.168.0.1
+```
+
+![](etc/nmtui01.png)
+
+
+## VS code SSH
+
+```powershell
+PS C:\Users\he> ssh wheeltec@192.168.0.100 mkdir -p .ssh
+wheeltec@192.168.0.100's password:
+
+PS C:\Users\he> cat .ssh/id_rsa.pub | ssh wheeltec@192.168.0.100 'cat >> .ssh/authorized_keys'
+wheeltec@192.168.0.100's password:
+
+PS C:\Users\he> ssh wheeltec@192.168.0.100
+```
+
 ## Links
 - [material.io/resources/color](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=F44336)
 - [materialui.co/colors](https://materialui.co/colors)
 - [github.com/jkk-research/colors](https://github.com/jkk-research/colors/)
 
+## License
 
-<a href="LICENSE"><img src="https://raw.githubusercontent.com/jkk-research/ros1ros2/main/etc/cc0.svg" width=40% /></a>
+![](https://raw.githubusercontent.com/jkk-research/ros1ros2/main/etc/cc0.svg)
