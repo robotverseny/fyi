@@ -1,0 +1,52 @@
+Host wheeltec_fekete_101
+  HostName 192.168.0.101
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_szurke_102
+  HostName 192.168.0.102
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_feher_103
+  HostName 192.168.0.103
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_bordo_104
+  HostName 192.168.0.104
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_piros_105
+  HostName 192.168.0.105
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_narancs_106
+  HostName 192.168.0.106
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_sarga_107
+  HostName 192.168.0.107
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_barna_108
+  HostName 192.168.0.108
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_kek_109
+  HostName 192.168.0.109
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_lila_110
+  HostName 192.168.0.110
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_zold_111
+  HostName 192.168.0.111
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_rozsaszin_112
+  HostName 192.168.0.112
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa
+Host wheeltec_bezs_113
+  HostName 192.168.0.113
+  User wheeltec
+  IdentityFile ~/.ssh/id_rsa

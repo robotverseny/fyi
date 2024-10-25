@@ -70,7 +70,33 @@ wheeltec@192.168.0.101's password:
 PS C:\Users\he> ssh wheeltec@192.168.0.101
 ```
 
+
+> [!TIP]
+> Use the sample config file: [github.com/robotverseny/fyi/blob/main/useful/ssh_config](https://github.com/robotverseny/fyi/blob/main/useful/ssh_config)
+
+# Install 
+
+```powershell
+wget https://raw.githubusercontent.com/robotverseny/fyi/main/useful/install_jazzy.sh
+```
+
+```powershell
+sudo chmod +x install_jazzy.sh
+```
+
+Normal install:
+```powershell
+./install_jazzy.sh
+```
+
+Wifi option with `openssh-server`, so caution is advised:
+```powershell
+./install_jazzy.sh wifi
+```
+
 ## Links
+- [github.com/robotverseny/drivers](https://github.com/robotverseny/drivers/)
+- [ssh login without password](https://github.com/szenergy/szenergy-public-resources/wiki/H-SSH-no-password)
 - [material.io/resources/color](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=F44336)
 - [materialui.co/colors](https://materialui.co/colors)
 - [github.com/jkk-research/colors](https://github.com/jkk-research/colors/)
