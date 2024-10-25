@@ -51,9 +51,9 @@ echo "#### ADDED BY INSTALL SCRIPT wget https://raw.githubusercontent.com/robotv
 echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 echo "export RCUTILS_COLORIZED_OUTPUT=1" >> ~/.bashrc
 echo "# export ROS_DOMAIN_ID="$(( $RANDOM % 100 + 1 )) >> ~/.bashrc
-echo "my_ip=$(ip a | grep 192. | awk '{print $2}' | cut -d'/' -f1 | head -n 1)" >> ~/.bashrc
-echo "# echo -e "robo_ | \e[44m$my_ip\e[0m | TODO: color "
-
+# echo "my_ip=$(ip a | grep 192. | awk '{print $2}' | cut -d'/' -f1 | head -n 1)" >> ~/.bashrc
+# echo "# echo -e "robo_ | \e[44m$my_ip\e[0m | TODO: color "
+echo "echo -e "wheeltec || TODO: color and udev rules"" >> ~/.bashrc
 
 echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
 echo "export _colcon_cd_root=/opt/ros/jazzy/" >> ~/.bashrc
@@ -63,6 +63,8 @@ echo ""
 echo "++++ create workspace ++++"
 echo ""
 
+cd ~
+wget https://raw.githubusercontent.com/jkk-research/jkk_utils/ros2/.bash_aliases
 
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
