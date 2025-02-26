@@ -51,13 +51,32 @@ echo "#### ADDED BY INSTALL SCRIPT wget https://raw.githubusercontent.com/robotv
 echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 echo "export RCUTILS_COLORIZED_OUTPUT=1" >> ~/.bashrc
 echo "# export ROS_DOMAIN_ID="$(( $RANDOM % 100 + 1 )) >> ~/.bashrc
+echo "ROBOT_NUM="100"" >> ~/.bashrc
+echo "ROBOT_ID="wheeltec_UNDEFINED_100"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_fekete_101"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_szurke_102"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_feher_103"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_bordo_104"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_piros_105"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_narancs_106"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_sarga_107"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_barna_108"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_kek_109"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_lila_110"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_zold_111"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_rozsaszin_112"" >> ~/.bashrc
+echo "#ROBOT_ID="wheeltec_bezs_113"" >> ~/.bashrc
+#### TODO: use $ROBOT_ID and $ROBOT_NUM later
 # echo "my_ip=$(ip a | grep 192. | awk '{print $2}' | cut -d'/' -f1 | head -n 1)" >> ~/.bashrc
-# echo "# echo -e "robo_ | \e[44m$my_ip\e[0m | TODO: color "
+# echo "# echo -e "robo_ | \e[44m$my_ip\e[0m | TODO: echo $ROBOT_ID "
 echo "echo -e "wheeltec || TODO: color and udev rules"" >> ~/.bashrc
 
+wget https://raw.githubusercontent.com/Martin-Oehler/ros2cd/refs/heads/main/roscd.sh
+echo "source ~/roscd.sh" >> ~/.bashrc
 echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
 echo "export _colcon_cd_root=/opt/ros/jazzy/" >> ~/.bashrc
 echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
+
 
 echo ""
 echo "++++ create workspace ++++"
@@ -70,7 +89,7 @@ mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 git clone https://github.com/robotverseny/drivers
 git clone https://github.com/robotverseny/lane_following_cam
-git clone https://github.com/jkk-research/jkk_utils
+git clone https://github.com/robotverseny/jkk_utils
 
 cd ~/ros2_ws
 source ~/.bashrc
@@ -83,6 +102,9 @@ sudo apt install ros-jazzy-ros-gz -y
 
 sudo apt install libpcap0.8-dev libpcl-dev libboost-all-dev -y
 sudo apt install ros-jazzy-nav2-msgs ros-jazzy-ackermann-msgs ros-jazzy-tf2-msgs ros-jazzy-tf2-geometry-msgs ros-jazzy-joint-state-publisher ros-jazzy-robot-localization ros-jazzy-usb-cam -y
+
+bash ~/ros2_ws/src/drivers/shell/update_alias.sh
+
 
 echo "First arg: $1"
 if [ "$1" != "wifi" ]
