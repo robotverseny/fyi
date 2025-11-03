@@ -100,6 +100,7 @@ Wifi option with `openssh-server`, so caution is advised:
 - [material.io/resources/color](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=F44336)
 - [materialui.co/colors](https://materialui.co/colors)
 - [github.com/jkk-research/colors](https://github.com/jkk-research/colors/)
+- [go.sze.hu/wh)(http://go.sze.hu/wh)
 
 ## License
 
